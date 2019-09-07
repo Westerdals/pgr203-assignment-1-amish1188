@@ -11,7 +11,7 @@ PGR Excercises
     *Fives
     *Sixes
     *Pair
-    *Two pair
+    *Two pairs
     *Full house
     *Small straight
     *Large straight

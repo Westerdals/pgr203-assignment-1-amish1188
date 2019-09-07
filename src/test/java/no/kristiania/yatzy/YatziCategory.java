@@ -1,5 +1,5 @@
 package no.kristiania.yatzy;
 
 public enum YatziCategory {
-    ONES
+    TWOS, THREES, FOURS, FIVES, SIXES, PAIR, ONES
 }

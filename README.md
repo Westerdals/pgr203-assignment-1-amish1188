@@ -15,3 +15,15 @@ PGR Excercises
     *Full house
     *Small straight
     *Large straight
+    
+    Edwin Engelbrethsen
+    Marcin Janeki
+    
+    Youtube link til video: https://youtu.be/ZD0-xuIWK5Y
+    
+    
+    Github: 
+    https://github.com/EdwinEngelbrethsen/YatzyGruppe43
+    
+    Travis-ci: 
+    https://travis-ci.com/EdwinEngelbrethsen/YatzyGruppe43

@@ -55,7 +55,7 @@ public class yatzyGame {
 
     @Test
     void checkFullHouse(){
-        assertEquals(21, scoreYatzy(YatziCategory.FULLHOUSE, new int[] {2,3,6,3,3,6}));
+        assertEquals(25, scoreYatzy(YatziCategory.FULLHOUSE, new int[] {2,3,6,3,3,6}));
         assertEquals(0, scoreYatzy(YatziCategory.FULLHOUSE, new int[] {2,2,6,3,3,5}));
     }
 
@@ -85,7 +85,7 @@ public class yatzyGame {
 
     @Test
     void checkChance(){
-        assertEquals(25, scoreYatzy(YatziCategory.CHANCE, new int[] {2,3,6,5,4,6}));
+        assertEquals(26, scoreYatzy(YatziCategory.CHANCE, new int[] {2,3,6,5,4,6}));
         assertEquals(18, scoreYatzy(YatziCategory.CHANCE, new int[] {1,2,3,3,4,5}));
     }
 
@@ -198,7 +198,7 @@ public class yatzyGame {
         if(smallStraight== 5){
             return 15;
         }
-        return smallStraight;
+        return 0;
     }
 
     public int calcLargeStraight(int[] dice){
@@ -213,7 +213,7 @@ public class yatzyGame {
         if(largeStraight== 5){
             return 20;
         }
-        return largeStraight;
+        return 0;
     }
 
     //this function we will reuse in calc three and four of a kind

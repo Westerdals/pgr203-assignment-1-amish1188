@@ -26,4 +26,4 @@ PGR Excercises
     https://github.com/Westerdals/pgr203-assignment-1-amish1188
     
     Travis-ci: 
-    https://travis-ci.com/amish1188/pgr203-excercise
+    https://travis-ci.com/Westerdals/pgr203-assignment-1-amish1188/jobs/236629107/config

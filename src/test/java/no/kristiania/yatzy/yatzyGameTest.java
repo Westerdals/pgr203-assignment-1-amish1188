@@ -3,7 +3,7 @@ package no.kristiania.yatzy;
         import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class yatzyGame {
+public class yatzyGameTest {
 
     @Test
     void checkOnes(){

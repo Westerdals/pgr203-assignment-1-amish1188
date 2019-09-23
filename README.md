@@ -15,6 +15,10 @@ PGR Excercises
     *Full house
     *Small straight
     *Large straight
+    *Four of a kind
+    *Three of a kind
+    *Yatzy
+    *Chance
     
     Edwin Engelbrethsen
     Marcin Janecki

@@ -121,4 +121,32 @@ public class YatzyGame {
         }
         return 0;
     }
+
+    // main method where we calculate all yatzy possibilities
+    static int scoreYatzy(YatzyCategory cat, int[] dice) {
+        int [] frequencies = new int[7];
+        int score= 0;
+
+        for(int die : dice){
+            frequencies[die]++;
+        }
+
+        if(cat == YatzyCategory.ONES){score = calcOneScore(1, frequencies);}
+        else if(cat == YatzyCategory.TWOS){score = calcOneScore(2, frequencies);}
+        else if(cat == YatzyCategory.THREES){score = calcOneScore(3, frequencies);}
+        else if(cat == YatzyCategory.FOURS){score = calcOneScore(4, frequencies);}
+        else if(cat == YatzyCategory.FIVES){score = calcOneScore(5, frequencies);}
+        else if(cat == YatzyCategory.SIXES){score = calcOneScore(6, frequencies);}
+        else if(cat == YatzyCategory.PAIR){score = calcPair(frequencies);}
+        else if(cat == YatzyCategory.TWOPAIRS){score = calcTwoPairs(frequencies);}
+        else if(cat == YatzyCategory.FULLHOUSE){score = calcFullHouse(frequencies);}
+        else if(cat == YatzyCategory.SMALLSTRAIGHT){score = calcSmallStraight(frequencies);}
+        else if(cat == YatzyCategory.LARGESTRAIGHT){score = calcLargeStraight(frequencies);}
+        else if(cat == YatzyCategory.FOUROFAKIND){score = calcFourOfAKind(frequencies);}
+        else if(cat == YatzyCategory.THREEOFAKIND){score = calcThreeOfAKind(frequencies);}
+        else if(cat == YatzyCategory.CHANCE){score = calcChance(frequencies);}
+        else if(cat == YatzyCategory.YATZY){score = calcYatzy(frequencies);}
+
+        return score;
+    }
 }
